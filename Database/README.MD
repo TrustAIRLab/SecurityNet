@@ -6,7 +6,7 @@ We separate the models used for benchmarking and security research in two differ
 
 ## Benchmark Models
 
-## Models Used for Security Research
+## Security Research Models
 | Model Name                                   | Model Type   | Data Name   | Data Category   |   Num Class |   Training Size |   Train Accuracy |   Test Accuracy |   Overfit Gap |   Model Stealing Accuracy |   Model Stealing Agreement |   Correct Auc |   M_entropy AUC | Conference   | Conference Type   |   Year | Country         |   Num Authors | Purpose   | Paper Link                               | Weights                                                            |
 |:---------------------------------------------|:-------------|:------------|:----------------|------------:|----------------:|-----------------:|----------------:|--------------:|--------------------------:|---------------------------:|--------------:|----------------:|:-------------|:------------------|-------:|:----------------|--------------:|:----------|:-----------------------------------------|:-------------------------------------------------------------------|
 | resnet_periodic_cosine_eps8_wd1e-3_max16_100 | resnet       | CIFAR-10    | natural         |          10 |           50000 |           0.8696 |          0.803  |        0.0666 |                    0.7212 |                     0.8044 |        0.5333 |        0.548015 | NeurIPS      | ML                |   2020 | Switzerland, UK |             5 | security  | [Link](https://arxiv.org/pdf/2006.08403) | [Link](https://github.com/IVRL/AdversaryLossLandscape/tree/master) |
