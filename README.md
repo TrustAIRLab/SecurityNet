@@ -1,4 +1,9 @@
 # SecurityNet
+
+[![arXiv: paper](https://img.shields.io/badge/arXiv-paper-red.svg)](https://arxiv.org/pdf/2310.12665.pdf)
+[![dataet: released](https://img.shields.io/badge/dataset-released-green.svg)](https://github.com/TrustAIRLab/SecurityNet/tree/main/Database)
+[![license: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This is the official repository for our USENIX Security Symposium 2024 paper ["SecurityNet: Assessing Machine Learning Vulnerabilities on Public Models"](https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-boyang).
 
 ## Introduction  
@@ -16,4 +21,17 @@ We advocate researchers to perform experiments on public models to better demons
 
 ![SecurityNet Statistics](./figures/SecurityNet.png)
 
-## Code and database coming soon
+## Citation
+If you find this useful in your research, please consider citing:
+
+```
+@article{ZLYHBFZ24,
+      author = {Boyang Zhang and Zheng Li and Ziqing Yang and Xinlei He and Michael Backes and Mario Fritz and Yang Zhang},
+      title = {{SecurityNet: Assessing Machine Learning Vulnerabilities on Public Models}},
+      journal = {{USENIX Security Symposium (USENIX Security)}},
+      year = {2024}
+}
+```
+
+## License
+`securitynet` is licensed under the terms of the MIT license. See LICENSE for more details.
