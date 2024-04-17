@@ -21,6 +21,10 @@ We advocate researchers to perform experiments on public models to better demons
 
 ![SecurityNet Statistics](./figures/SecurityNet.png)
 
+## Database
+
+We will release all models and the corresponding annotated information in phases. Please see the [database](https://github.com/TrustAIRLab/SecurityNet/tree/main/Database) page for detailed information. 
+
 ## Citation
 If you find this useful in your research, please consider citing:
 
