@@ -18,6 +18,7 @@ We argue that to understand ML models' vulnerabilities comprehensively, experime
 To this end, we propose using publicly available models with weights from the Internet (public models) for evaluating attacks and defenses on ML models.
 We establish a database, namely SecurityNet, containing 910 annotated image classification models.
 We then analyze the effectiveness of several representative attacks/defenses, including model stealing attacks, membership inference attacks, and backdoor detection on these public models.
+
 Our evaluation empirically shows the performance of these attacks/defenses can vary significantly on public models compared to self-trained models.
 We advocate researchers to perform experiments on public models to better demonstrate their proposed methods' effectiveness in the future.
 
