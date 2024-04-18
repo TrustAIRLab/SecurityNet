@@ -1,7 +1,7 @@
 # SecurityNet
 
 [![arXiv: paper](https://img.shields.io/badge/arXiv-paper-red.svg)](https://arxiv.org/pdf/2310.12665.pdf)
-[![website: online](https://img.shields.io/badge/website-online-blue.svg)](https://boz083.github.io/securitynet/)
+[![website: online](https://img.shields.io/badge/website-online-blue.svg)](https://trustairlab.github.io/SecurityNet/)
 [![dataet: released](https://img.shields.io/badge/dataset-released-green.svg)](https://github.com/TrustAIRLab/SecurityNet/tree/main/Database)
 [![license: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
