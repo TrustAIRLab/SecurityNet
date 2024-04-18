@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="SecurityNet: Assessing Machine Learning Vulnerabilities on Public Models">
+  <meta name="keywords" content="SecurityNet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SecurityNet: Assessing Machine Learning Vulnerabilities on Public Models</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/database.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SecurityNet: Assessing Machine Learning Vulnerabilities on Public Models</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://boz083.github.io/">Boyang Zhang</a>,</span>
+            <span class="author-block">
+              <a href="https://zhenglisec.github.io/">Zheng Li</a>,</span>
+            <span class="author-block">
+              <a href="https://zqypku.github.io/">Ziqing Yang</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://xinleihe.github.io/">Xinlei He</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://cispa.de/en/people/backes">Michael Backes</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://cispa.de/en/people/mario.fritz">Mario Fritz</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://yangzhangalmo.github.io/">Yang Zhang</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">CISPA Helmholtz Center for Information Security</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/TrustAIRLab/SecurityNet"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/TrustAIRLab/SecurityNet/tree/main/Database"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Database</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present SecurityNet as the first step towards conducting ML models’ security and privacy vulnerability evaluation on public models.
+          </p>
+          <p>
+            While advanced machine learning (ML) models are deployed in numerous real-world applications, 
+            previous works demonstrate these models have security and privacy vulnerabilities.
+            Various empirical research has been done in this field. However, most of the experiments are 
+            performed on target ML models trained by the security researchers themselves. Due to the high 
+            computational resource requirement for training advanced models with complex architectures, 
+            researchers generally choose to train a few target models using relatively simple architectures 
+            on typical experiment datasets.
+          </p>
+          <p>
+            We argue that to understand ML models' vulnerabilities comprehensively, experiments should be 
+            performed on a large set of models trained with various purposes (not just the purpose of 
+            evaluating ML attacks and defenses). To this end, we propose using publicly available models with 
+            weights from the Internet (public models) for evaluating attacks and defenses on ML models.
+            We establish a database, namely SecurityNet, containing 910 annotated image classification models.
+            We then analyze the effectiveness of several representative attacks/defenses, including model stealing attacks, 
+            membership inference attacks, and backdoor detection on these public models. Our evaluation empirically shows 
+            the performance of these attacks/defenses can vary significantly on public models compared to self-trained models.
+            We advocate researchers to perform experiments on public models to better demonstrate their proposed methods' effectiveness in the future.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Database. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Database</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            We present a database containing publicly available models with weights. We focus on one of the most
+            popular machine learning tasks, image classification, as it is also typically used to demonstrate the 
+            effectiveness of attacks and defenses on ML models.
+
+            The statistics overview of the dataset is presented below.
+          <figure>
+              <img src="./static/images/stats.png"/>
+              <figcaption>Figure 1. SecurityNet statistics</figcaption>
+          </figure>
+          </p>
+          
+        </div>
+      </div>
+    </div>
+    <!--/ Database. -->
+
+    <!-- Membership Inference. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Evaluations</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            Thanks to SecurityNet, we can perform an extensive evaluation for model stealing, 
+            membership inference, and backdoor detection on a large set of public models, which, 
+            to the best of our knowledge, has not been done before. Our analyses confirm some results 
+            from previous works but on a much larger scale, discover some new insights, and show some 
+            of the previous results obtained from researchers’ self-trained models can vary on public models.
+          </p>
+          <p>
+            We find that the model stealing attack can perform especially poorly on certain datasets, 
+            such as CUB-200-2011, in contrast to target models (with the same architecture) trained on other datasets.
+            Furthermore, we demonstrate that the model stealing performance negatively correlates with the model’s target 
+            task performance and is too low to be effective on some modern high-performing models.
+          </p>
+          <figure>
+              <img src="./static/images/modsteal1.png"/>
+              <figcaption>Figure 2. Model stealing performance across different datasets</figcaption>
+          </figure>
+          <p>
+            As for membership inference, we make a similar observation, as shown in previous works, that the attack performance 
+            positively correlates with the victim model’s overfit- ting level. Additionally, we find methods that perform well on 
+            experiment datasets do not guarantee similar performance on more difficult datasets. In contrast to previous work’s results, 
+            the MLP-based attack performs differently on models trained with data that contains a large number of classes (e.g., ImageNet-1k) 
+            when using different input methods.
+          </p>
+          <figure>
+              <img src="./static/images/member1.png"/>
+              <figcaption>Figure 3. Membership inference performance across different datasets</figcaption>
+          </figure>
+          <figure>
+              <img src="./static/images/member2.png"/>
+              <figcaption>Figure 4. Membership inference performance across different attack methods</figcaption>
+          </figure>
+          <p>
+            Please refer to the paper for more detailed analysis including results on benchmark vs. security models and correlation with metadata.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+    <!--/ Membership Inference. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{ZLYHBFZ24,
+      author = {Boyang Zhang and Zheng Li and Ziqing Yang and Xinlei He and Michael Backes and Mario Fritz and Yang Zhang},
+      title = {{SecurityNet: Assessing Machine Learning Vulnerabilities on Public Models}},
+      journal = {{USENIX Security Symposium (USENIX Security)}},
+      year = {2024}
+}
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2011.12948">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/TrustAIRLab/SecurityNet" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website is built based on the <a
+              href="https://github.com/nerfies/nerfies.github.io">nerfies template</a> .
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
