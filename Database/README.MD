@@ -1,6 +1,6 @@
 # SecurityNet Database
 
-We will gradually all of the models and their relevant annotated information in the database. The download links for both the model weights and their original papers (if available) can be found in the last two columns. We do not host or own any of the models provided. Please refer to the original project or code base for details.
+We will gradually include more models and their relevant annotated information in the database. The download links for both the model weights and their original papers (if available) can be found in the last two columns. We do not host or own any of the models provided. Please refer to the original project or code base for details.
 
 We separate the models used for benchmarking and security research in two different tables for ease of search.
 
