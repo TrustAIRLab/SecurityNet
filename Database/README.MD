@@ -2,7 +2,7 @@
 
 We will gradually include more models and their relevant annotated information in the database. The download links for both the model weights and their original papers (if available) can be found in the last two columns. We do not host or own any of the models provided. Please refer to the original project or code base for details.
 
-We separate the models used for [benchmarking](## Benchmark Models and [security](## Security Models) research in two different tables for ease of search.
+We separate the models used for [benchmarking](## Benchmark Models) and [security](## Security Research Models) research in two different tables for ease of search.
 
 ## Benchmark Models
 | Model Name                     | Model Type   | Data Name       | Data Category   |   Num Class |   Training Size |   Train Accuracy |   Test Accuracy |   Overfit Gap |   Model Stealing Accuracy |   Model Stealing Agreement |   Correct Auc |   M_entropy AUC |   Wrn Accuracy |   Wrn Agree |   ImgNet Accuracy |   ImgNet Agree | Conference   | Conference Type   |   Year | Country    |   Num Authors | Purpose   | Paper Link                                                                                        | Weights                                                       |
